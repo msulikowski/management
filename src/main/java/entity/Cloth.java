@@ -1,16 +1,16 @@
 package entity;
 
 public class Cloth extends Product{
-    private Integer size;
+    private String size;
     private String material;
 
-    public Cloth(Long id, String productName, Float price, Float weight, String color, Integer productCount, Integer size, String material) {
+    public Cloth(Long id, String productName, Float price, Float weight, String color, Integer productCount, String size, String material) {
         super(id, productName, price, weight, color, productCount);
         this.size = size;
         this.material = material;
     }
 
-    public Integer getSize() {
+    public String getSize() {
         return size;
     }
 
